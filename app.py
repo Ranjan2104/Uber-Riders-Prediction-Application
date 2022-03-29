@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np
 import math
 import pickle
+from collections.abc import Mapping
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
